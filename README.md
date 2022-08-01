@@ -12,6 +12,8 @@ Tabela de conteúdos
 ### Pré-requisitos
 Para executar a solução, é necessário ter uma ferramenta que comporte Jupyter Notebooks do Python. como Google Colab ou Anaconda. Também é necessário instalar as bibliotecas e suas versões específicas, que estão listadas no arquivo requirements.txt. Para isso, basta executar o comando "pip install requirements.txt" no terminal, utilizando um ambiente virtual Python, ou "conda install requirements.txt", no caso de utilizar o ambiente anaconda.
 
+A solução está contida no arquivo "notebook.ipynb". Basta baixar os arquivos do repositório e executar os scripts.
+
 ### Análise Exploratória dos Dados
 Já de início, foi informado que não haviam dados nulos, ou seja, não foi necessário tratar isso.
 
