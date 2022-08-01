@@ -8,3 +8,6 @@ Tabela de conteúdos
    * [Modelagem](#modelagem)
    * [Otimização](#otimizacao)
 <!--te-->
+
+### Pré-requisitos
+Para executar a solução, é necessário ter uma ferramenta que comporte Jupyter Notebooks do Python. como Google Colab ou Anaconda. Também é necessário instalar as bibliotecas e suas versões específicas, que estão listadas no arquivo requirements.txt
