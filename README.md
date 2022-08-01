@@ -15,6 +15,7 @@ Para executar a solução, é necessário ter uma ferramenta que comporte Jupyte
 ### Análise Exploratória dos Dados
 Já de início, foi informado que não haviam dados nulos, ou seja, não foi necessário tratar isso.
 
+#### Análise univariada
 Como não havia muitas informações sobre a base, decidi investigar as variáveis. Analisando a quantidade de valores únicos e estatísticas básicas, cheguei a algumas observações:
 
 1. As variáveis 'feature1' e 'feature15' aparentavam ser variáveis categóricas já codificadas;
@@ -22,9 +23,13 @@ Como não havia muitas informações sobre a base, decidi investigar as variáve
 3. Algumas variáveis estão em escalas muito diferentes;
 4. Algumas variáveis aparentam ter outliers.
 
+#### Análise e tratamento de outliers
 Sendo assim, tratei os outliers com uma técnica estatística que consiste nos seguintes passos. Para cada variável numérica:
 1. Descobrir o Intervalo Interquartil;
 2. Calcular os limites superior e inferior;
 3. Verificar quais dados estão além desses limites e classificá-los como outliers.
 
-Optei por excluir esses outliers.
+Optei por simplesmente excluir esses outliers da base de dados.
+
+#### Análise multivariada
+Como não há informações sobre as variáveis da base, não há como criar hipótese de relação entre pares de variáveis. Sendo assim, analisei apenas a matriz de correlação para constatar que há multicolinearidade, devido a algumas variáveis.
