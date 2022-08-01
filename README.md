@@ -29,7 +29,16 @@ Sendo assim, tratei os outliers com uma técnica estatística que consiste nos s
 2. Calcular os limites superior e inferior;
 3. Verificar quais dados estão além desses limites e classificá-los como outliers.
 
-Optei por simplesmente excluir esses outliers da base de dados.
+Optei por simplesmente excluir esses outliers da base de dados. Após isso, verifiquei a distribuição dos dados e observei que as features não são normalmente distribuídas.
 
 #### Análise multivariada
 Como não há informações sobre as variáveis da base, não há como criar hipótese de relação entre pares de variáveis. Sendo assim, analisei apenas a matriz de correlação para constatar que há multicolinearidade, devido a algumas variáveis.
+
+### Modelagem
+Na etapa de modelagem, criei um modelo base utilizando a Regressão Logística e comparei sua performance com a dos algoritmos K Nearest Neighbours, classificador SVM, Random Forest e XGBoost.
+
+Optei por avaliar os modelos utilizando a métrica de acurácia, pois as classes estão bem balanceadas e porque é uma métrica fácil de ser interpretada. Se houvesse desbalanceamento nas classes ou uma importância maior de prever a classe positiva ou a classe negativa, poderia utilizar outras métricas como recall ou precisão.
+
+A conclusão foi que os dois algoritmos que melhor performaram foram o classificador SVM e o XGBoost, mas, ainda assim, com uma acurácia relativamente baixa.
+
+### Otimização
