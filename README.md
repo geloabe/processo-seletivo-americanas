@@ -35,10 +35,13 @@ Optei por simplesmente excluir esses outliers da base de dados. Após isso, veri
 Como não há informações sobre as variáveis da base, não há como criar hipótese de relação entre pares de variáveis. Sendo assim, analisei apenas a matriz de correlação para constatar que há multicolinearidade, devido a algumas variáveis.
 
 ### Modelagem
-Na etapa de modelagem, criei um modelo base utilizando a Regressão Logística e comparei sua performance com a dos algoritmos K Nearest Neighbours, classificador SVM, Random Forest e XGBoost.
+Na etapa de modelagem, criei um modelo base utilizando a Regressão Logística e comparei sua performance com a dos algoritmos classificador SVM e XGBoost.
 
 Optei por avaliar os modelos utilizando a métrica de acurácia, pois as classes estão bem balanceadas e porque é uma métrica fácil de ser interpretada. Se houvesse desbalanceamento nas classes ou uma importância maior de prever a classe positiva ou a classe negativa, poderia utilizar outras métricas como recall ou precisão.
 
-A conclusão foi que os dois algoritmos que melhor performaram foram o classificador SVM e o XGBoost, mas, ainda assim, com uma acurácia relativamente baixa.
+A conclusão foi que o algoritmo com melhor performance foi o SVM, porém, ainda assim, com acurácia baixa.
 
 ### Otimização
+Na etapa de otimização, investigamos formas de melhorar a performance do modelo e, para isso, temos duas opções: melhorar os dados ou melhorar o modelo.
+
+Realizei duas operações para tentar melhorar o SVM: a normalização dos dados e a redução de dimensionalidade utilizando o PCA. Nenhuma dessas etapas apresentou uma mudança significativa na acurácia do modelo.
